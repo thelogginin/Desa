@@ -1,0 +1,347 @@
+body{
+font-family:Arial;
+background:#f2f2f2;
+margin:0;
+padding:0;
+}
+
+.page{
+max-width:480px;
+min-width:320px;
+margin:auto;
+padding:20px;
+}
+
+.hidden{
+display:none;
+}
+
+input{
+width:100%;
+padding:10px;
+margin:10px 0;
+}
+
+button{
+padding:10px;
+background:#1e88e5;
+border:none;
+color:white;
+cursor:pointer;
+}
+
+button:hover{
+background:#1565c0;
+}
+
+.card{
+background:white;
+padding:15px;
+margin:10px 0;
+border-radius:6px;
+}
+
+.menuBtn{
+display:block;
+width:100%;
+margin:5px 0;
+}
+
+/* PROFILE CARD */
+
+.profile-card{
+background:white;
+border-radius:10px;
+padding:20px;
+text-align:center;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.profile-title{
+font-size:18px;
+font-weight:bold;
+margin-bottom:15px;
+}
+
+.profile-photo{
+width:120px;
+height:120px;
+border-radius:50%;
+object-fit:cover;
+margin-bottom:15px;
+border:4px solid #1e88e5;
+}
+
+.profile-item{
+display:flex;
+align-items:center;
+gap:10px;
+padding:8px;
+border-bottom:1px solid #eee;
+}
+
+.profile-item:last-child{
+border-bottom:none;
+}
+
+.icon{
+font-size:18px;
+}
+
+.status-box{
+background:white;
+border-radius:10px;
+padding:15px;
+margin-bottom:15px;
+text-align:center;
+box-shadow:0 2px 8px rgba(0,0,0,0.1);
+}
+
+.status-text{
+font-size:18px;
+font-weight:bold;
+margin-bottom:10px;
+}
+
+.jam-box{
+display:flex;
+justify-content:space-around;
+font-size:28px;
+font-weight:bold;
+margin-top:10px;
+}
+
+.jam-label{
+font-size:12px;
+color:#666;
+}
+
+.stat-grid{
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:10px;
+margin-top:15px;
+}
+
+.stat-card{
+background:white;
+padding:15px;
+border-radius:10px;
+text-align:center;
+box-shadow:0 2px 6px rgba(0,0,0,0.1);
+}
+
+.stat-number{
+font-size:22px;
+font-weight:bold;
+}
+
+/* LOGIN PAGE */
+
+.login-page{
+height:100vh;
+display:flex;
+align-items:center;
+justify-content:center;
+background:linear-gradient(135deg,#5b8def,#6ec6ff);
+padding:0;
+}
+
+
+.login-card{
+background:white;
+padding:40px;
+border-radius:20px;
+width:320px;
+box-shadow:0 10px 30px rgba(0,0,0,0.15);
+text-align:center;
+}
+
+.login-card h2{
+margin-bottom:25px;
+color:#333;
+}
+
+.login-card input{
+width:100%;
+padding:12px;
+margin:10px 0;
+border-radius:8px;
+border:1px solid #ddd;
+font-size:14px;
+}
+
+.login-card input:focus{
+outline:none;
+border-color:#5b8def;
+}
+
+.login-card button{
+width:100%;
+padding:12px;
+border:none;
+border-radius:10px;
+background:#5b8def;
+color:white;
+font-weight:bold;
+cursor:pointer;
+transition:0.3s;
+}
+
+.login-card button:hover{
+background:#4a78d4;
+}
+
+#loginMsg{
+color:red;
+font-size:14px;
+margin-top:10px;
+}
+
+/* BOTTOM NAVIGATION */
+
+.bottom-menu{
+position:fixed;
+bottom:0;
+left:0;
+right:0;
+height:70px;
+background:white;
+border-top:1px solid #ddd;
+display:flex;
+justify-content:space-around;
+align-items:center;
+box-shadow:0 -2px 10px rgba(0,0,0,0.1);
+z-index:1000;
+}
+
+.menu-item{
+flex:1;
+text-align:center;
+font-size:12px;
+cursor:pointer;
+color:#444;
+}
+
+.menu-item .icon{
+display:block;
+font-size:22px;
+}
+
+.menu-item.active{
+color:#1e88e5;
+font-weight:bold;
+}
+
+/* supaya content tidak tertutup menu */
+
+.page{
+padding-bottom:90px;
+}
+
+.scanner-box{
+position:relative;
+width:100%;
+height:300px;
+overflow:hidden;
+border-radius:8px;
+}
+
+#reader{
+width:100%;
+height:100%;
+}
+
+.btn {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+
+.btn-primary {
+  background: #4c6ef5;
+  color: white;
+}
+
+.btn-danger {
+  background: #fa5252;
+  color: white;
+}
+
+.table{
+width:100%;
+border-collapse:collapse;
+}
+
+.table th{
+text-align:left;
+padding:10px;
+background:#f5f7ff;
+font-weight:600;
+}
+
+.table td{
+padding:10px;
+border-bottom:1px solid #eee;
+}
+
+.btn-danger{
+background:#1976D2;
+color:white;
+border:none;
+padding:6px 12px;
+border-radius:4px;
+cursor:pointer;
+}
+
+/* HEADER */
+
+.app-header{
+position:sticky;
+top:0;
+background:white;
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:10px 15px;
+border-bottom:1px solid #ddd;
+z-index:1000;
+}
+
+.header-left{
+display:flex;
+align-items:center;
+gap:15px;
+}
+
+.logo{
+width:60px;
+height:60px;
+object-fit:contain;
+}
+
+.instansi-nama{
+font-weight:bold;
+font-size:18px;
+}
+
+.instansi-sub{
+font-size:14px;
+color:#666;
+}
+
+.header-right{
+font-size:15px;
+font-weight:bold;
+color:#1e88e5;
+}
+
+#welcome span{
+font-size:11px;
+color:#666;
+}
+
